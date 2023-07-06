@@ -1,5 +1,7 @@
 ![image](https://github.com/juicyjung/LAW-Alpaca/assets/83687471/c1b4612c-7099-4cd7-8044-444f9f31c710)
 
+(고수분들 조언 부탁드립니다 🙏 [Help Click](https://github.com/juicyjung/LAW-Alpaca#help))
+
 # LAW-Alpaca
 
 AI 법률 어드바이저 모델 개발
