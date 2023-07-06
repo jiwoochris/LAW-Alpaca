@@ -15,7 +15,7 @@ KoAlpaca 모델에 법률 데이터를 학습시켜 (LoRA finetuning) 법률 자
 
 
 ## Pretrained model
-[beomi/polyglot-ko-12.8b-safetensors](https://huggingface.co/beomi/polyglot-ko-12.8b-safetensors)
+Pretrained model link : [beomi/polyglot-ko-12.8b-safetensors](https://huggingface.co/beomi/polyglot-ko-12.8b-safetensors)
 
 Stanford Alpaca 모델을 학습한 방식과 동일한 방식으로 학습을 진행한, 한국어를 이해하는 Alpaca 모델 KoAlpaca 사용
 
