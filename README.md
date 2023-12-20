@@ -1,7 +1,5 @@
 ![image](https://github.com/juicyjung/LAW-Alpaca/assets/83687471/c1b4612c-7099-4cd7-8044-444f9f31c710)
 
-(고수분들 조언 부탁드립니다 🙏 [Click : 아래로 이동](https://github.com/juicyjung/LAW-Alpaca#help))
-
 # LAW-Alpaca
 
 AI 법률 어드바이저 모델 개발
@@ -100,17 +98,3 @@ gen('월세방을 얻어 자취를 하던 중 군 입영통지서를 받았습�
 이 프로젝트에 대한 Contributions는 언제나 환영입니다. 특히 [데이터](https://github.com/juicyjung/LAW-Alpaca/blob/main/%EC%83%9D%ED%99%9C%EB%B2%95%EB%A0%B9.json) 힘들게 수집했으니 많은 후속 연구 부탁드립니다!!
 
 문제가 발견되거나 제안사항이 있으면 이 repository에 issue를 열어 주세요.
-
-### Help
-
-이유는 잘 모르겠는데 모델 학습이 수월하게 되지 않습니다... Colab 요금제도 너무 비싸서 계속 테스트 해보기도 버겁고 학부생 수준에서 쉽지 않네요...
-
-1. Training Loss가 어느순간부터 0으로만 나오는 현상 (LoraConfig의 r을 16 이상으로 올리거나 TrainingArguments epoch을 6 이상으로 늘릴 때 주로 발생)
-2. 이상한 말을 막 내뱉는 현상 (아래 예시)
-![image](https://github.com/juicyjung/LAW-Alpaca/assets/83687471/c18ed7ce-4188-4ce3-b637-7d65d96c22fa)
-- [생활법령.json](https://github.com/juicyjung/LAW-Alpaca/blob/main/%EC%83%9D%ED%99%9C%EB%B2%95%EB%A0%B9.json)에는 들어가있지 않지만 "안녕 너는 누구야?" -> "안녕하세요 저는 법률자문을 도와주는 ai 챗봇 LAW Alpaca라고 해요" 와 같은 데이터도 같이 학습시켰음에도 불구하고 다른 얘기를 한다... **학습이 된건지 만건지..**
-- 그래도 "아파트 아래층 사람이 발코니에서 담배를 피워 간접흡연으로 피해를 받고 있는데요. 세대 내부 발코니도 아파트 금연구역으로 지정할 수 있나요?"와 같은 법률 질문은 **LoRA 학습하기 전과 비교해 학습 데이터와 비슷한 답변을 내놓긴 합니다.**
-
-**학습 코드 (Colab)**: 학습 코드는 [여기](https://colab.research.google.com/drive/1OjyOK1JGg10QKYjEWsHchX1CiWiEH_si?usp=sharing)에서 확인할 수 있습니다.
-
-여기서 코드 보시고 수정해야할 부분 있으면 많은 조언 부탁드립니다 ㅠㅠ
