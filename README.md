@@ -13,9 +13,7 @@ KoAlpaca 모델에 법률 데이터를 학습시켜 (LoRA finetuning) 법률 자
 
 
 ## Pretrained model
-Pretrained model link : [beomi/polyglot-ko-12.8b-safetensors](https://huggingface.co/beomi/polyglot-ko-12.8b-safetensors)
-
-Stanford Alpaca 모델을 학습한 방식과 동일한 방식으로 학습을 진행한, 한국어를 이해하는 Alpaca 모델 KoAlpaca 사용
+Pretrained model link : [hyunseoki/ko-en-llama2-13b](https://huggingface.co/hyunseoki/ko-en-llama2-13b)
 
 ## Data
 [생활 법령](https://www.easylaw.go.kr/CSP/Main.laf) 100문 100답 데이터 2,195개를 스크랩 하여 LLM 학습을 위한 대화 형식의 json 파일로 만들어놓았습니다.
