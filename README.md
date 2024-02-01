@@ -44,3 +44,5 @@ dataset = load_dataset("juicyjung/easylaw_kr")
 이 프로젝트에 대한 Contributions는 언제나 환영입니다. 특히 [데이터](https://github.com/juicyjung/LAW-Alpaca/blob/main/%EC%83%9D%ED%99%9C%EB%B2%95%EB%A0%B9.json) 힘들게 수집했으니 많은 후속 연구 부탁드립니다!!
 
 문제가 발견되거나 제안사항이 있으면 이 repository에 issue를 열어 주세요.
+
+감사합니다.
