@@ -15,6 +15,11 @@ KoAlpaca 모델에 법률 데이터를 학습시켜 (LoRA finetuning) 법률 자
 ## Pretrained model
 Pretrained model link : [hyunseoki/ko-en-llama2-13b](https://huggingface.co/hyunseoki/ko-en-llama2-13b)
 
+> **공개 모델과 베이스 모델 안내**
+> - 2023년 7월 4일에 공개한 모델 [jiwoochris/ko_law_alpaca-12.8b](https://huggingface.co/jiwoochris/ko_law_alpaca-12.8b) 는 [beomi/KoAlpaca-Polyglot-12.8B](https://huggingface.co/beomi/KoAlpaca-Polyglot-12.8B) 에 이 저장소의 데이터셋으로 QLoRA(4-bit, LoRA r=8) 학습한 어댑터입니다.
+> - 위 링크의 hyunseoki/ko-en-llama2-13b 와 `fine-tuning.sh` 는 2023년 12월에 Llama 2 계열 베이스로 갱신한 학습 설정입니다.
+> - 2023년 5월의 첫 실험 [jiwoochris/Law-alpaca-lora-7b](https://huggingface.co/jiwoochris/Law-alpaca-lora-7b) 는 LLaMA 7B(decapoda-research/llama-7b-hf) 에 LoRA 학습한 어댑터입니다.
+
 ## Data
 [생활 법령](https://www.easylaw.go.kr/CSP/Main.laf) 100문 100답 데이터 2,195개를 스크랩 하여 LLM 학습을 위한 대화 형식의 json 파일로 만들어놓았습니다.
 ![image](https://github.com/juicyjung/LAW-Alpaca/assets/83687471/f9d81285-3a2f-445f-895e-f3f5c2ef9ee5)
