@@ -1,3 +1,5 @@
+> **LAW-Alpaca (English summary).** 2,195 Korean everyday-law Q&A instruction pairs, scraped and reformatted from the Korean government's 생활법령 guidance site ([easylaw.go.kr](https://www.easylaw.go.kr/CSP/Main.laf)), released in July 2023 together with a LoRA adapter ([jiwoochris/ko_law_alpaca-12.8b](https://huggingface.co/jiwoochris/ko_law_alpaca-12.8b)) on [beomi/KoAlpaca-Polyglot-12.8B](https://huggingface.co/beomi/KoAlpaca-Polyglot-12.8B). Dataset: [jiwoochris/easylaw_kr](https://huggingface.co/datasets/jiwoochris/easylaw_kr). The dataset was used as legal-domain training and evaluation data in *Chamain* ([NLP4ConvAI @ ACL 2024](https://aclanthology.org/2024.nlp4convai-1.7/)). The Llama-2 link and `fine-tuning.sh` below are a December 2023 update of the training setup; the May 2023 first experiment was a LoRA adapter on LLaMA-7B ([jiwoochris/Law-alpaca-lora-7b](https://huggingface.co/jiwoochris/Law-alpaca-lora-7b)). Korean description follows.
+
 ![image](https://github.com/juicyjung/LAW-Alpaca/assets/83687471/c1b4612c-7099-4cd7-8044-444f9f31c710)
 
 # LAW-Alpaca
@@ -25,14 +27,14 @@ Pretrained model link : [hyunseoki/ko-en-llama2-13b](https://huggingface.co/hyun
 ![image](https://github.com/juicyjung/LAW-Alpaca/assets/83687471/f9d81285-3a2f-445f-895e-f3f5c2ef9ee5)
 
 
-[huggingface dataset](https://huggingface.co/datasets/juicyjung/easylaw_kr)에도 올려놓았습니다.
+[huggingface dataset](https://huggingface.co/datasets/jiwoochris/easylaw_kr)에도 올려놓았습니다.
 
 datasets library에서 이 dataset을 바로 불러올 수 있습니다 :
 
 ```python
 from datasets import load_dataset
 
-dataset = load_dataset("juicyjung/easylaw_kr")
+dataset = load_dataset("jiwoochris/easylaw_kr")
 ```
 
 ## Copyright Policy
@@ -46,7 +48,7 @@ dataset = load_dataset("juicyjung/easylaw_kr")
 
 ## Contributions
 
-이 프로젝트에 대한 Contributions는 언제나 환영입니다. 특히 [데이터](https://github.com/juicyjung/LAW-Alpaca/blob/main/%EC%83%9D%ED%99%9C%EB%B2%95%EB%A0%B9.json) 힘들게 수집했으니 많은 후속 연구 부탁드립니다!!
+이 프로젝트에 대한 Contributions는 언제나 환영입니다. 특히 [데이터](https://github.com/jiwoochris/LAW-Alpaca/blob/main/%EC%83%9D%ED%99%9C%EB%B2%95%EB%A0%B9.json) 힘들게 수집했으니 많은 후속 연구 부탁드립니다!!
 
 문제가 발견되거나 제안사항이 있으면 이 repository에 issue를 열어 주세요.
 
